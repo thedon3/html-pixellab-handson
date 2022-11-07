@@ -1,4 +1,4 @@
-/* don't touch this */
+/* please do not modify this code */
 .pane {
   width: 38%;
   float: left;
@@ -7,10 +7,11 @@
   margin-right: 20px;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
-/* don't touch this */
+/* please do not modify this code */
 
 .pane-long .heading {
   border-width: 1px;
@@ -122,5 +123,5 @@ ul, ol {
   padding-top: 3px;
   padding-right: 3px;
   padding-bottom: 3px;
-  padding-left:3px;
+  padding-left: 3px;
 }
