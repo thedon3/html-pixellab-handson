@@ -18,24 +18,42 @@
 <body>
   <form>
     <input
+      type="text"
+      name="name"
+      placeholder="Nume"
+      required
+    > <br> <br>
+
+    <input
+      type="text"
+      name="surname"
+      placeholder="Prenume"
+      required
+    > <br> <br>
+
+    <input
+      type="text"
+      name="username"
+      placeholder="Nume de utilizator"
+      minlength="3"
+      maxlength="25"
+    >
+
+    <input
       type="email"
       name="email"
       id="name"
       placeholder="email@email.com"
       required
-    >
-
-    <br>
+    > <br> <br>
 
     <input
       type="tel"
       name="phone"
       placeholder="0712345678"
       required
-    >
+    > <br> <br>
 
-
-    <br> <br>
     <button type="submit">Trimite</button>
   </form>
 
