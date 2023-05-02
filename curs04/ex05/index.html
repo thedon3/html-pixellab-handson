@@ -17,11 +17,26 @@
 
 <body>
   <p>
-    <a href="https://www.google.com/">Home</a> |
-    <a href="https://www.google.com/"><b>Create account</b></a> |
-    <a href="https://www.google.com/">Your Account</a> |
-    <a href="https://www.google.com/">Customer Service</a> |
-    <a href="https://www.google.com/">Contact</a>
+    <a
+      href="https://www.google.com/"
+      title="Home"
+    >Home</a> |
+    <a
+      href="https://www.google.com/"
+      title="Create account"
+    ><b>Create account</b></a> |
+    <a
+      href="https://www.google.com/"
+      title="Your Account"
+    >Your Account</a> |
+    <a
+      href="https://www.google.com/"
+      title="Customer Service"
+    >Customer Service</a> |
+    <a
+      href="https://www.google.com/"
+      title="Contact"
+    >Contact</a>
   </p>
 
   <h1>Create Account</h1>
@@ -31,7 +46,9 @@
       src="./images/your-account.jpg"
       alt="Your account"
     >
-  </p>This is your account section.<p>
+  </p>
+
+  <p>This is your account section.</p>
 
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -44,7 +61,7 @@
     officia deserunt mollit anim id est laborum.
   </p>
 
-  <h3>Create an account</h3>
+  <h2>Create an account</h2>
 
   <form>
     <fieldset>
@@ -55,7 +72,8 @@
       <label for="male">Mr</label>
       <input
         type="radio"
-        name="title"
+        name="gender"
+        value="male"
         id="male"
         checked
       >
@@ -63,15 +81,17 @@
       <label for="female">Ms</label>
       <input
         type="radio"
-        name="title"
+        name="gender"
+        value="female"
         id="female"
       >
 
-      <label for="uspecified">Unspecified</label>
+      <label for="na">Unspecified</label>
       <input
         type="radio"
-        name="title"
-        id="unspecified"
+        name="gender"
+        value="na"
+        id="na"
       >
 
       <br><br>
@@ -124,11 +144,11 @@
       >
 
       <br><br>
-      <label for="confirmPassword">*Confirm Password</label>
+      <label for="password-confirm">*Confirm Password</label>
       <input
         type="password"
-        name="confirmPassword"
-        id="confirmPassword"
+        name="password-confirm"
+        id="password-confirm"
         placeholder="Confirm Password"
         required
       >
@@ -152,27 +172,35 @@
       <br>
       <input
         type="checkbox"
-        name="subscriptionConsent"
-        id="subscriptionConsent"
-        value="subscriptionConsent"
+        name="subscribe"
+        id="subscribe"
+        value="subscribe"
       >
-      <label for="subscriptionConsent">
+      <label for="subscribe">
         Agree to this and <i>we will send you emails</i>.
       </label>
 
       <br>
       <input
         type="checkbox"
-        name="gdprConsent"
-        id="gdprConsent"
-        value="gdprConsent"
+        name="gdpr-consent"
+        id="gdpr-consent"
+        value="gdpr-consent"
       >
-      <label for="gdprConsent">GDPR generic consent?</label>
+      <label for="gdpr-consent">GDPR generic consent?</label>
 
       <br> <br>
-      <button type="submit">Create Account</button>
+      <button
+        type="submit"
+        name="submit"
+        id="submit"
+      >Create Account</button>
 
-      <button type="reset">Reset</button>
+      <button
+        type="reset"
+        name="reset"
+        id="reset"
+      >Reset</button>
     </fieldset>
   </form>
 
@@ -195,11 +223,26 @@
   </p>
 
   <p>
-    <a href="https://www.google.com/">Home</a> |
-    <a href="https://www.google.com/"><b>Create account</b></a> |
-    <a href="https://www.google.com/">Your Account</a> |
-    <a href="https://www.google.com/">Customer Service</a> |
-    <a href="https://www.google.com/">Contact</a>
+    <a
+      href="https://www.google.com/"
+      title="Home"
+    >Home</a> |
+    <a
+      href="https://www.google.com/"
+      title="Create account"
+    ><b>Create account</b></a> |
+    <a
+      href="https://www.google.com/"
+      title="Your Account"
+    >Your Account</a> |
+    <a
+      href="https://www.google.com/"
+      title="Customer Service"
+    >Customer Service</a> |
+    <a
+      href="https://www.google.com/"
+      title="Contact"
+    >Contact</a>
   </p>
 
   <div
