@@ -44,3 +44,11 @@
 .nav-bottom a {
   color: white;
 }
+
+.section-title {
+  text-align: center;
+  background-color: white;
+  position: sticky;
+  top: 8px;
+  z-index: 1;
+}
