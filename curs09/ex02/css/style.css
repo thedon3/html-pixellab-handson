@@ -46,3 +46,21 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+.stage-05 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stage-06 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.stage-07 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
