@@ -1,0 +1,9 @@
+input[type='checkbox']:checked + label {
+  color: green;
+}
+
+input[type='radio']:checked + label {
+  background: lightgreen;
+  color: white;
+  text-shadow: 1px 1px 4px green;
+}
