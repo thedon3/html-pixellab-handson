@@ -21,3 +21,27 @@
   border-radius: 50%;
   margin-left: 4px;
 }
+
+.my-second-list a {
+  display: block;
+}
+
+.my-second-list a::before {
+  content: '';
+  display: inline-block;
+  background-color: pink;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.my-second-list a::after {
+  content: '';
+  display: inline-block;
+  background: blue;
+  transform: rotate(45deg);
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+}

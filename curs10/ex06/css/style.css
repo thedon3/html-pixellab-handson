@@ -14,3 +14,29 @@ p:hover i {
   right: -2px;
   top: -2px;
 }
+
+h1:hover {
+  text-decoration: underline;
+}
+
+.secondary a {
+  text-decoration: line-through;
+}
+
+.secondary a:hover {
+  text-decoration: overline;
+}
+
+.main li:nth-of-type(odd) a:hover {
+color: green;
+text-decoration: none;
+}
+
+p b {
+  position: relative;
+}
+
+p:hover b {
+  top: -2px;
+  color: red;
+}

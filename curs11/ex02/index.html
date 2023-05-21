@@ -66,26 +66,26 @@
         <b>Don’t forget to provide a phone.</b>
       </li>
 
-      <li>Then we need your real shipping address.</li>
+      <li>Then we need your <i>real</i> shipping address.</li>
 
       <li>Finally, your credit card information.</li>
     </ol>
   </div>
 
+  <!-- FORMULAR -->
   <form class="container">
     <div class="row">
-      <fieldset class="col-4">
+
+      <div class="col-4">
         <legend>Personal Information</legend>
-        <div>
-          <label>Title</label>
-        </div>
 
         <div>
+          <label>Title:</label>
           <label for="male">Mr.</label>
           <input
+            name="gender"
             type="radio"
             id="male"
-            name="gender"
             value="male"
             checked
           >
@@ -93,46 +93,447 @@
           <label for="female">Ms.</label>
           <input
             type="radio"
-            id="female"
             name="gender"
-            value="female"
+            id="female"
           >
-
-          <label for="na">Undefined</label>
+          <label for="unspecified">Unspecified</label>
           <input
             type="radio"
-            id="na"
             name="gender"
-            value="na"
+            id="unspecified"
           >
+        </div>
 
-          <div class="input-group">
-            <label for="name">
+        <br>
 
-            </label>
+        <!-- NAME -->
+        <div class="input-group">
+          <label
+            for="name"
+            class="input-group-text w-50"
+          >* Name</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          >
+        </div>
 
-          </div>
+        <!-- SURNAME -->
+        <div class="input-group">
+          <label
+            for="surname"
+            class="input-group-text w-50"
+          >* Surname</label>
+          <input
+            class="form-control"
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Surname"
+            required
+          >
+        </div>
+
+        <!-- EMAIL -->
+        <div class="input-group">
+          <label
+            for="email"
+            class="input-group-text w-50"
+          >* Email</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          >
+        </div>
+
+        <!-- PHONE -->
+        <div class="input-group">
+          <label
+            for="phone"
+            class="input-group-text w-50"
+          >* Phone</label>
+          <input
+            class="form-control"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            required
+          >
+        </div>
+
+      </div>
 
 
+
+      </fieldset>
+
+      <!-- ADDRESS -->
+      <fieldset class="col-4">
+        <legend>Address</legend>
+
+        <div class="input-group">
+          <label
+            for="name"
+            class="input-group-text w-50"
+          >* Name</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          >
+        </div>
+
+        <!-- SURNAME -->
+        <div class="input-group">
+          <label
+            for="surname"
+            class="input-group-text w-50"
+          >* Surname</label>
+          <input
+            class="form-control"
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Surname"
+            required
+          >
+        </div>
+
+        <!-- EMAIL -->
+        <div class="input-group">
+          <label
+            for="email"
+            class="input-group-text w-50"
+          >* Email</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          >
+        </div>
+
+
+        <!-- ADDRESS LINE 1 -->
+        <div class="input-group">
+          <label
+            for="address-line1"
+            class="input-group-text w-50"
+          >* Address 1</label>
+          <input
+            class="form-control"
+            type="text"
+            name="address-line1"
+            id="address-line1"
+            placeholder="Address line 1"
+            required
+          >
+        </div>
+
+        <!-- ADDRESS LINE 2 -->
+        <div class="input-group">
+          <label
+            for="address-line2"
+            class="input-group-text w-50"
+          >Address 2</label>
+          <input
+            class="form-control"
+            type="text"
+            name="address-line2"
+            id="address-line2"
+            placeholder="Address line 2"
+          >
+        </div>
+
+        <!-- CITY -->
+        <div class="input-group">
+          <label
+            for="address-city"
+            class="input-group-text w-50"
+          >* City</label>
+          <input
+            class="form-control"
+            type="text"
+            name="address-city"
+            id="address-city"
+            placeholder="City"
+            required
+          >
+        </div>
+
+        <!-- STATE -->
+        <div class="input-group">
+          <label
+            for="address-state"
+            class="input-group-text w-50"
+          >* State</label>
+          <select
+            name="address-state"
+            id="address-state"
+            required
+          >
+            <option value="">--State--</option>
+            <option value="">Stat 1</option>
+            <option value="">Stat 2</option>
+            <option value="">Stat 3</option>
+            <option value="">Stat 4</option>
+            <option value="">Stat 5</option>
+            <option value="">Stat 6</option>
+            <option value="">Stat 7</option>
+          </select>
+        </div>
+
+        <!-- POSTCODE -->
+        <div class="input-group">
+          <label
+            for="postcode"
+            class="input-group-text w-50"
+          >* Postcode</label>
+          <input
+            class="form-control"
+            type="text"
+            name="postcode"
+            id="postcode"
+            placeholder="Postcode"
+            required
+          >
+        </div>
+
+        <!-- END ADDRESS FIELDS -->
+
+
+        <!-- CARD INFO -->
+      </fieldset>
+      <fieldset class="col-4">
+        <legend>Card Information</legend>
+        <div class="input-group">
+          <label
+            for="card-number"
+            class="input-group-text w-50"
+          >* Number</label>
+          <input
+            class="form-control"
+            type="text"
+            name="card-number"
+            id="card-number"
+            placeholder="Card Number"
+            required
+          >
+        </div>
+
+        <!-- Name on Card -->
+        <div class="input-group">
+          <label
+            for="nameOnCard"
+            class="input-group-text w-50"
+          >* Name</label>
+          <input
+            class="form-control"
+            type="text"
+            name="nameOnCard"
+            id="nameOnCard"
+            placeholder="Name on Card"
+            required
+          >
+        </div>
+
+        <!-- Card Expiration - Month -->
+        <div class="input-group">
+          <label
+            for="cardMonth"
+            class="input-group-text w-50"
+          >* Month</label>
+          <select
+            name="cardMonth"
+            id="cardMonth"
+            required
+          >
+            <option value="">January</option>
+            <option value="">Feabruary</option>
+            <option value="">March</option>
+            <option value="">April</option>
+            <option value="">June</option>
+            <option value="">July</option>
+            <option value="">August</option>
+            <option value="">September</option>
+            <option value="">October</option>
+            <option value="">November</option>
+            <option value="">December</option>
+          </select>
+        </div>
+
+        <!-- Card Expiration - Year -->
+        <div class="input-group">
+          <label
+            for="cardYear"
+            class="input-group-text w-50"
+          >* Year</label>
+          <select
+            name="cardYear"
+            id="cardYear"
+            required
+          >
+            <option value="">2023</option>
+            <option value="">2022</option>
+            <option value="">2021</option>
+            <option value="">2020</option>
+            <option value="">2019</option>
+            <option value="">2018</option>
+          </select>
+        </div>
+
+        <!-- Card CVV -->
+        <div class="input-group">
+          <label
+            for="cardCVV"
+            class="input-group-text w-50"
+          >* CVV</label>
+          <input
+            class="form-control"
+            type="text"
+            name="cardCVV"
+            id="cardCVV"
+            placeholder="CVV"
+            required
+          >
+        </div>
+
+        <div>
+          <span class="fst-italic">
+            We do not store credit card information.
+          </span>
         </div>
       </fieldset>
 
-      <fieldset class="col-4">
-        <legend>Address</legend>
-      </fieldset>
-
-      <fieldset class="col-4">
-        <legend>Card Information</legend>
-      </fieldset>
     </div>
 
+    <br><br>
     <div class="row">
-      <fieldset class="col-6">
+
+      <!-- CHECKBOXES -->
+
+      <fieldset class="offset-3 col-6">
         <legend>Form Controls</legend>
+        <div class="input-group">
+          <input
+            name="termsAndConditions"
+            type="checkbox"
+            id="termsAndConditions"
+            value="termsAndConditions"
+            required
+          >
+          <label for="termsAndConditions">
+            *You are required to confirm the
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >terms and conditions</a>.
+          </label>
+        </div>
+
+        <br>
+
+        <div class="input-group">
+          <input
+            name="newsletterSubscription"
+            type="checkbox"
+            id="newsletterSubscription"
+            value="newsletterSubscription"
+          >
+          <label for="newsletterSubscription">
+            Agree to this and <i>we will send you emails</i>.
+          </label>
+        </div>
+
+        <br>
+        <div class="input-group">
+          <input
+            name="GDPRconsent"
+            type="checkbox"
+            id="GDPRconsent"
+            value="GDPRconsent"
+          >
+          <label for="GDPRconsent">
+            GDPR Generic Consent?
+          </label>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+
+          <div class="col-6">
+            <button
+              type="submit"
+              title="Place ORder"
+              class="text-uppercase btn btn-primary d-block w-100"
+            >Place Order</button>
+          </div>
+
+          <div class="col-6">
+            <button
+              type="reset"
+              title="Reset"
+              class="btn btn-secondary d-block w-100"
+            >Reset</button>
+          </div>
+        </div>
       </fieldset>
     </div>
 
   </form>
+
+  <br><br>
+
+  <div class="container">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+
+  <div class="container">
+    <p>
+      <a
+        href="/"
+        title="Home"
+      >Home</a> *
+
+      <a
+        href=""
+        title="Place Order"
+      >Place Order</a> *
+
+      <a
+        href=""
+        title="Customer Service"
+      >Customer Service</a> *
+
+      <a
+        href=""
+        title="Contact"
+      >Contact</a>
+    </p>
+  </div>
 
 </body>
 

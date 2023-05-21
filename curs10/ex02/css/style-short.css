@@ -16,7 +16,7 @@
 
 
 /* Elementul nu este centrat. Incearca "margin: 15px auto;". */
-.pane-short .shot-para {
+.pane-short .short-para {
   border: 1px solid wheat;
   width: 50%;
   margin: 15px auto;
