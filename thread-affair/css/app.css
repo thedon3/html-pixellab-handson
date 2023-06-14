@@ -678,14 +678,21 @@ a {
   font-size: 26px;
   font-weight: 500;
   margin-bottom: 10px;
-  padding: 0 40px;
+  padding: 20px 40px;
 }
 
 .banner-secondary .banner-secondary-inner .banner-secondary-cta {
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 26px 40px;
+  padding: 10px 15px;
+  border: 2px solid #ff6b6b;
+  border-radius: 25px;
+  margin-right: 30px;
+}
+
+.banner-secondary .banner-secondary-inner .banner-secondary-cta:hover {
+  background: #ff6b6b;
 }
 
 .banner-secondary .banner-secondary-inner .banner-secondary-cta span {
