@@ -672,6 +672,7 @@ a {
   text-align: right;
   height: 100%;
   position: relative;
+  bottom: 12px;
 }
 
 .banner-secondary .banner-secondary-inner h1 {
